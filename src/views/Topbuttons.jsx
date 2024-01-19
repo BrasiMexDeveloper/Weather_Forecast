@@ -5,7 +5,7 @@ const Topbuttons = () => {
     const [isCelsius, setIsCelsius] = useState(true);
     const [cities, setCities] = useState([
         { id: 1, name: "New York", temp: null, icon: null },
-        { id: 2, name: "London", temp: null, icon: null },
+        { id: 2, name: "Goiania", temp: null, icon: null },
         { id: 3, name: "Seattle", temp: null, icon: null },
         { id: 4, name: "Mexico City", temp: null, icon: null },
     ]);

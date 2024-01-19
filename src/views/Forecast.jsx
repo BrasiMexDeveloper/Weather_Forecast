@@ -125,7 +125,7 @@ const Forecast = () => {
           <hr className='my-2' />
           <div className='bottom'>
             {hourlyData && hourlyData.slice(0, 10).map((hour, index) => (
-              <div key={index} className='flex flex-col items-center justify-center hover:text-lg '>
+              <div key={index} className='flex flex-col items-center justify-center hover:text-sm '>
                 <p className='font-normal text-md text-white'>{new Date(hour.dt * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
                 {hour.weather[0].icon && <img src={`http://openweathermap.org/img/w/${hour.weather[0].icon}.png`} alt="Weather icon" />}
                 <p className='font-bold'>{hour.temp.toString().slice(0, 2)}°F</p>
